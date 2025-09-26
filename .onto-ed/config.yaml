@@ -1,11 +1,11 @@
 # Repository Configuration for OntoSpreadEd
 # This file configures how your ontology repository works with the editor
 
-full_name: your_org/example-ontology # Full name of the repository (replace with actual)
+full_name: wlazlod/example-ontology # Full name of the repository (replace with actual)
 id_digits: 6 # Number of digits to be used when generating IDs
 indexed_files: # List of files or regex expressions of files that should be included in the search index
-  - ontology-data.xlsx # The main ontology spreadsheet file
-  - sheets/.*.xlsx # All files under sheets directory (if you have multiple sheets)
+  # - ontology-data.xlsx # The main ontology spreadsheet file (commented out for now)
+  # - sheets/.*.xlsx # All files under sheets directory (if you have multiple sheets)
 readonly_files: # Mapping of files and explanation to files which should be readonly
   # "generated-file.xlsx": "This file is generated automatically from ontology-data.xlsx"
 main_branch: main # Name of the main branch of the repository

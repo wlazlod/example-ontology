@@ -1,0 +1,5 @@
+ID,Label,Definition,Parent,Status,Curator
+EX_0000001,Thing,The root class of all entities,,approved,admin
+EX_0000002,Material Entity,Physical material entities,EX_0000001,proposed,admin
+EX_0000003,Process,Occurrent processes that unfold in time,EX_0000001,proposed,admin
+EX_0000004,Quality,Attributes or properties of entities,EX_0000001,proposed,admin

@@ -1,0 +1,4 @@
+ID,Label,Definition,Domain,Range,Status,Curator
+EX_0000101,part_of,A is part of B,EX_0000001,EX_0000001,approved,admin
+EX_0000102,has_quality,Entity has some quality,EX_0000002,EX_0000004,proposed,admin
+EX_0000103,participates_in,Material entity participates in process,EX_0000002,EX_0000003,proposed,admin
