@@ -1,0 +1,40 @@
+{
+  "name": "Example Ontology Release",
+  "description": "Configuration for releasing the example ontology",
+  "steps": [
+    {
+      "name": "Validate Ontology",
+      "description": "Validate the ontology structure and content",
+      "command": "robot validate --input ontology-data.xlsx --output validation-report.txt",
+      "type": "validation"
+    },
+    {
+      "name": "Generate OWL File",
+      "description": "Convert spreadsheet data to OWL format",
+      "command": "robot template --input ontology-data.xlsx --output ontology.owl",
+      "type": "generation"
+    },
+    {
+      "name": "Reason Over Ontology",
+      "description": "Run reasoning to check consistency",
+      "command": "robot reason --input ontology.owl --reasoner ELK --output ontology-reasoned.owl",
+      "type": "reasoning"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "OWL File",
+      "path": "ontology.owl",
+      "description": "Main ontology file in OWL format"
+    },
+    {
+      "name": "Reasoned OWL File", 
+      "path": "ontology-reasoned.owl",
+      "description": "Ontology file with inferred axioms"
+    }
+  ],
+  "dependencies": [
+    "http://purl.obolibrary.org/obo/bfo.owl",
+    "http://purl.obolibrary.org/obo/iao.owl"
+  ]
+}
