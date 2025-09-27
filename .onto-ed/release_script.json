@@ -1,6 +1,7 @@
 {
   "name": "Example Ontology Release",
   "description": "Configuration for releasing the example ontology",
+  "iri_prefix": "http://example.org/ontology/",
   "steps": [
     {
       "name": "Validate Ontology",
@@ -28,7 +29,7 @@
       "description": "Main ontology file in OWL format"
     },
     {
-      "name": "Reasoned OWL File", 
+      "name": "Reasoned OWL File",
       "path": "ontology-reasoned.owl",
       "description": "Ontology file with inferred axioms"
     }
@@ -36,5 +37,17 @@
   "dependencies": [
     "http://purl.obolibrary.org/obo/bfo.owl",
     "http://purl.obolibrary.org/obo/iao.owl"
-  ]
+  ],
+  "external": {
+    "sources": [
+      {
+        "name": "Basic Formal Ontology",
+        "url": "http://purl.obolibrary.org/obo/bfo.owl"
+      },
+      {
+        "name": "Information Artifact Ontology",
+        "url": "http://purl.obolibrary.org/obo/iao.owl"
+      }
+    ]
+  }
 }
