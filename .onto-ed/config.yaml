@@ -1,25 +1,5 @@
-# Repository Configuration for OntoSpreadEd
-# This file configures how your ontology repository works with the editor
-
-full_name: wlazlod/example-ontology # Full name of the repository (replace with actual)
-id_digits: 6 # Number of digits to be used when generating IDs
-indexed_files: [] # Empty list - no files indexed for now
-  # Example files to index once available:
-  # - ontology-data.xlsx # The main ontology spreadsheet file
-  # - sheets/.*.xlsx # All files under sheets directory
-readonly_files: {} # Empty object - no readonly files for now
-  # Example:
-  # "generated-file.xlsx": "This file is generated automatically from other-file.xlsx"
-main_branch: main # Name of the main branch of the repository
-prefixes: # Prefix mapping of used prefixes in the ontology
-  BFO: http://purl.obolibrary.org/obo/BFO_
-  IAO: http://purl.obolibrary.org/obo/IAO_
-  RO: http://purl.obolibrary.org/obo/RO_
-  # Add your ontology prefix here:
-  # EX: http://example.org/ontology/EX_
-release_file: ontology.owl # Path to the released ontology
-release_script_path: .onto-ed/release_script.json # Path to release configuration
-short_name: EXO # Short alias to show in the UI (3-4 letters recommended)
-validation: # List of flags for validation
-  - include-external # Load the externally imported files for validation
-  - include-dependencies # Load dependencies for validation
+full_name: wlazlod/example-ontology
+indexed_files:
+  - classes.csv
+  - properties.csv
+readonly_files: {}
