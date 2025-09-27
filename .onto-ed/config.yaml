@@ -3,11 +3,13 @@
 
 full_name: wlazlod/example-ontology # Full name of the repository (replace with actual)
 id_digits: 6 # Number of digits to be used when generating IDs
-indexed_files: # List of files or regex expressions of files that should be included in the search index
-  # - ontology-data.xlsx # The main ontology spreadsheet file (commented out for now)
-  # - sheets/.*.xlsx # All files under sheets directory (if you have multiple sheets)
-readonly_files: # Mapping of files and explanation to files which should be readonly
-  # "generated-file.xlsx": "This file is generated automatically from ontology-data.xlsx"
+indexed_files: [] # Empty list - no files indexed for now
+  # Example files to index once available:
+  # - ontology-data.xlsx # The main ontology spreadsheet file
+  # - sheets/.*.xlsx # All files under sheets directory
+readonly_files: {} # Empty object - no readonly files for now
+  # Example:
+  # "generated-file.xlsx": "This file is generated automatically from other-file.xlsx"
 main_branch: main # Name of the main branch of the repository
 prefixes: # Prefix mapping of used prefixes in the ontology
   BFO: http://purl.obolibrary.org/obo/BFO_
